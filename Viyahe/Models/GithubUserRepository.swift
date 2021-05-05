@@ -22,6 +22,24 @@ final class GithubUserRepository: UserRepository {
             }
         }
     }
+    
+    
+    func getUsers(sinceLastUserID since: Int, users: @escaping ([User]?) -> ()) {
+        NetworkingWithAlamofire.request("https://api.github.com/users?since=\(since)", method: .get, parameters: nil) { (success, data, error) in
+            if success, let responseData = data {
+                let jsonDecoder = JSONDecoder()
+                if let githubUsers = try? jsonDecoder.decode([GithubUser].self, from: responseData) {
+                    users(githubUsers)
+                } else {
+                    users(nil)
+                    //TODO: Negative scenarios not properly handled now for technical exam
+                }
+            } else {
+                users(nil) //on fail return current users already loaded
+                //TODO: Rate limiting not handled
+            }
+        }
+    }
 }
 
 //stubbed data

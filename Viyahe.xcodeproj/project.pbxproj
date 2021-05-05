@@ -16,6 +16,7 @@
 		5028EDC52641C0D500C784D8 /* NetworkingWithAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028EDC42641C0D500C784D8 /* NetworkingWithAlamofire.swift */; };
 		5028EDCA264201AA00C784D8 /* MainTableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028EDC9264201AA00C784D8 /* MainTableViewViewModel.swift */; };
 		5028EDCF2642020400C784D8 /* GithubUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028EDCE2642020400C784D8 /* GithubUserRepository.swift */; };
+		5028EDF12642459700C784D8 /* UserUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028EDF02642459700C784D8 /* UserUtils.swift */; };
 		50CC7E9826416446002F3AF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CC7E9726416446002F3AF2 /* AppDelegate.swift */; };
 		50CC7E9A26416446002F3AF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CC7E9926416446002F3AF2 /* SceneDelegate.swift */; };
 		50CC7E9C26416446002F3AF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CC7E9B26416446002F3AF2 /* ViewController.swift */; };
@@ -57,6 +58,7 @@
 		5028EDC42641C0D500C784D8 /* NetworkingWithAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingWithAlamofire.swift; sourceTree = "<group>"; };
 		5028EDC9264201AA00C784D8 /* MainTableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewViewModel.swift; sourceTree = "<group>"; };
 		5028EDCE2642020400C784D8 /* GithubUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserRepository.swift; sourceTree = "<group>"; };
+		5028EDF02642459700C784D8 /* UserUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUtils.swift; sourceTree = "<group>"; };
 		50CC7E9426416446002F3AF2 /* Viyahe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viyahe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CC7E9726416446002F3AF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50CC7E9926416446002F3AF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				5028EDBA2641BAED00C784D8 /* ColorSelector.swift */,
 				5028EDBF2641BB6200C784D8 /* Int+Viyahe.swift */,
 				5028EDC42641C0D500C784D8 /* NetworkingWithAlamofire.swift */,
+				5028EDF02642459700C784D8 /* UserUtils.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				5028EDA62641AEC000C784D8 /* Networking.swift in Sources */,
 				50CC7E9C26416446002F3AF2 /* ViewController.swift in Sources */,
 				50CC7EDD26417848002F3AF2 /* UIColor+Viyahe.swift in Sources */,
+				5028EDF12642459700C784D8 /* UserUtils.swift in Sources */,
 				50CC7EF026417B24002F3AF2 /* GithubUser.swift in Sources */,
 				5028EDC52641C0D500C784D8 /* NetworkingWithAlamofire.swift in Sources */,
 				50CC7E9826416446002F3AF2 /* AppDelegate.swift in Sources */,
