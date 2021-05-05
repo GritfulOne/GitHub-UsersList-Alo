@@ -16,6 +16,12 @@ struct GithubUser: User, Codable {
     private let organizations_url: String
     private let followers_url: String
     private let following_url: String
+    private let url: String
+    
+    private let followers: Int?
+    private let following: Int?
+    private let name: String?
+    private let company: String?
     
     func getID() -> Int {
         return id
@@ -33,7 +39,32 @@ struct GithubUser: User, Codable {
         return html_url
     }
     
-    func getName() -> String {
+    func getAlias() -> String {
         login
+    }
+    
+    func getUserURLString() -> String {
+        return url
+    }
+    
+    func getType() -> String {
+        return type
+    }
+    
+    
+    func getFollowers() -> Int? {
+        return followers
+    }
+    
+    func getFollowing() -> Int? {
+        return following
+    }
+    
+    func getFullName() -> String? {
+        return name
+    }
+    
+    func getOrganization() -> String? {
+        return company
     }
 }

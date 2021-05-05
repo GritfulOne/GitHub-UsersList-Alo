@@ -12,5 +12,12 @@ protocol User {
     func getUsername() -> String
     func getAvatarURL() -> URL?
     func getHTMLURLString() -> String
-    func getName() -> String
+    func getAlias() -> String
+    func getUserURLString() -> String
+    func getType() -> String
+    
+    func getFollowers() -> Int?
+    func getFollowing() -> Int?
+    func getFullName() -> String?
+    func getOrganization() -> String?
 }
