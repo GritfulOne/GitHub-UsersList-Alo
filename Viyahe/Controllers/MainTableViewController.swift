@@ -37,8 +37,19 @@ class MainTableViewController: UITableViewController {
                 self?.viewModel.showErrorAlert()
             }
         }
+        
+        refreshControl = UIRefreshControl()
+        refreshControl?.tintColor = .appTheme
+        refreshControl?.addTarget(self, action: #selector(onPulledDown), for: .valueChanged)
     }
     
+    @objc func onPulledDown() {
+        viewModel.getMoreUsers(currentUsers: users) { [weak self] users in
+            self?.users = users
+            self?.refreshControl?.endRefreshing()
+            self?.tableView.reloadData()
+        }
+    }
 
     // MARK: - Table view data source
 

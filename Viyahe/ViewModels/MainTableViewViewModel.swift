@@ -29,6 +29,19 @@ final class MainTableViewViewModel {
         }
     }
     
+    func getMoreUsers(currentUsers: [User], completion: @escaping ([User]) -> ()) {
+        
+        let since = UserUtils.getLastID(users: currentUsers)
+        userRepository.getUsers(sinceLastUserID: since) { (users) in
+            if var users = users {
+                users.append(contentsOf: currentUsers)
+                completion(users.sorted(by: { $0.getID() < $1.getID() }))
+            } else {
+                completion(currentUsers) //TODO: handle negative scenarios
+            }
+        }
+    }
+    
     
     func showErrorAlert() {
         let error = GithubError()

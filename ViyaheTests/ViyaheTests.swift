@@ -67,11 +67,16 @@ class ViyaheTests: XCTestCase {
         XCTAssertEqual(cgColor, UIColor.green.cgColor, "Color selected is wrong")
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testGetLastIDReturnsLastID() {
+        //given
+        let users = [GithubUser(id: 10, login: "String", avatarURL: "String", htmlURL: "String", type: "String"), GithubUser(id: 20, login: "String", avatarURL: "String", htmlURL: "String", type: "String")]
+        
+        //when
+        let lastID = UserUtils.getLastID(users: users)
+        
+        //then
+        XCTAssertEqual(lastID, 20, "Wrong last ID returned")
     }
 
 }

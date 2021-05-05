@@ -13,9 +13,14 @@ struct GithubUser: User, Codable {
     private let avatar_url: String
     private let html_url: String
     private let type: String
-    private let organizations_url: String
-    private let followers_url: String
-    private let following_url: String
+    
+    init(id: Int, login: String, avatarURL: String, htmlURL: String, type: String) {
+        self.id = id
+        self.login = login
+        self.avatar_url = avatarURL
+        self.html_url = htmlURL
+        self.type = type
+    }
     
     func getID() -> Int {
         return id

@@ -9,4 +9,5 @@ import Foundation
 
 protocol UserRepository: AnyObject {
     func getUsers(users: @escaping ([User]?) -> ())
+    func getUsers(sinceLastUserID since: Int, users: @escaping ([User]?) -> ())
 }
