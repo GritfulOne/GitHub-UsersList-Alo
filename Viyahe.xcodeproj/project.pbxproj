@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1180F12CC7AEE2D0D4C911A7 /* Pods_Viyahe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C0D3FC521BFB63CF815AD5 /* Pods_Viyahe.framework */; };
+		5028ED6C26417FC600C784D8 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028ED6B26417FC600C784D8 /* MainTableViewController.swift */; };
+		5028ED72264180E100C784D8 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028ED71264180E100C784D8 /* UserTableViewCell.swift */; };
+		5028EDA62641AEC000C784D8 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028EDA52641AEBF00C784D8 /* Networking.swift */; };
+		5028EDBB2641BAED00C784D8 /* ColorSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028EDBA2641BAED00C784D8 /* ColorSelector.swift */; };
+		5028EDC02641BB6200C784D8 /* Int+Viyahe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028EDBF2641BB6200C784D8 /* Int+Viyahe.swift */; };
+		5028EDC52641C0D500C784D8 /* NetworkingWithAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028EDC42641C0D500C784D8 /* NetworkingWithAlamofire.swift */; };
+		5028EDCA264201AA00C784D8 /* MainTableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028EDC9264201AA00C784D8 /* MainTableViewViewModel.swift */; };
+		5028EDCF2642020400C784D8 /* GithubUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028EDCE2642020400C784D8 /* GithubUserRepository.swift */; };
+		50CC7E9826416446002F3AF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CC7E9726416446002F3AF2 /* AppDelegate.swift */; };
+		50CC7E9A26416446002F3AF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CC7E9926416446002F3AF2 /* SceneDelegate.swift */; };
+		50CC7E9C26416446002F3AF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CC7E9B26416446002F3AF2 /* ViewController.swift */; };
+		50CC7EA12641644B002F3AF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50CC7EA02641644B002F3AF2 /* Assets.xcassets */; };
+		50CC7EA42641644B002F3AF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50CC7EA22641644B002F3AF2 /* LaunchScreen.storyboard */; };
+		50CC7EAF2641644C002F3AF2 /* ViyaheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CC7EAE2641644C002F3AF2 /* ViyaheTests.swift */; };
+		50CC7EBA2641644C002F3AF2 /* ViyaheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CC7EB92641644C002F3AF2 /* ViyaheUITests.swift */; };
+		50CC7ECF264169AB002F3AF2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CC7ECE264169AB002F3AF2 /* Coordinator.swift */; };
+		50CC7ED4264169EB002F3AF2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CC7ED3264169EB002F3AF2 /* AppCoordinator.swift */; };
+		50CC7EDD26417848002F3AF2 /* UIColor+Viyahe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CC7EDC26417848002F3AF2 /* UIColor+Viyahe.swift */; };
+		50CC7EE626417A1C002F3AF2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CC7EE526417A1C002F3AF2 /* User.swift */; };
+		50CC7EEB26417A6A002F3AF2 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CC7EEA26417A6A002F3AF2 /* UserRepository.swift */; };
+		50CC7EF026417B24002F3AF2 /* GithubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CC7EEF26417B24002F3AF2 /* GithubUser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50CC7EAB2641644C002F3AF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50CC7E8C26416446002F3AF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50CC7E9326416446002F3AF2;
+			remoteInfo = Viyahe;
+		};
+		50CC7EB62641644C002F3AF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50CC7E8C26416446002F3AF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50CC7E9326416446002F3AF2;
+			remoteInfo = Viyahe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5028ED6B26417FC600C784D8 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		5028ED71264180E100C784D8 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		5028EDA52641AEBF00C784D8 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		5028EDBA2641BAED00C784D8 /* ColorSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelector.swift; sourceTree = "<group>"; };
+		5028EDBF2641BB6200C784D8 /* Int+Viyahe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Viyahe.swift"; sourceTree = "<group>"; };
+		5028EDC42641C0D500C784D8 /* NetworkingWithAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingWithAlamofire.swift; sourceTree = "<group>"; };
+		5028EDC9264201AA00C784D8 /* MainTableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewViewModel.swift; sourceTree = "<group>"; };
+		5028EDCE2642020400C784D8 /* GithubUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserRepository.swift; sourceTree = "<group>"; };
+		50CC7E9426416446002F3AF2 /* Viyahe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viyahe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50CC7E9726416446002F3AF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50CC7E9926416446002F3AF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		50CC7E9B26416446002F3AF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50CC7EA02641644B002F3AF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50CC7EA32641644B002F3AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50CC7EA52641644B002F3AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50CC7EAA2641644C002F3AF2 /* ViyaheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViyaheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50CC7EAE2641644C002F3AF2 /* ViyaheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViyaheTests.swift; sourceTree = "<group>"; };
+		50CC7EB02641644C002F3AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50CC7EB52641644C002F3AF2 /* ViyaheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViyaheUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50CC7EB92641644C002F3AF2 /* ViyaheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViyaheUITests.swift; sourceTree = "<group>"; };
+		50CC7EBB2641644C002F3AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50CC7ECE264169AB002F3AF2 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		50CC7ED3264169EB002F3AF2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		50CC7EDC26417848002F3AF2 /* UIColor+Viyahe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Viyahe.swift"; sourceTree = "<group>"; };
+		50CC7EE526417A1C002F3AF2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		50CC7EEA26417A6A002F3AF2 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		50CC7EEF26417B24002F3AF2 /* GithubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUser.swift; sourceTree = "<group>"; };
+		51DDBEAF4FFE7D7CBFBD2B86 /* Pods-Viyahe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viyahe.release.xcconfig"; path = "Target Support Files/Pods-Viyahe/Pods-Viyahe.release.xcconfig"; sourceTree = "<group>"; };
+		C2C0D3FC521BFB63CF815AD5 /* Pods_Viyahe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viyahe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F83CC5A715ACD33AB1F49667 /* Pods-Viyahe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viyahe.debug.xcconfig"; path = "Target Support Files/Pods-Viyahe/Pods-Viyahe.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50CC7E9126416446002F3AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1180F12CC7AEE2D0D4C911A7 /* Pods_Viyahe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CC7EA72641644C002F3AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CC7EB22641644C002F3AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15BEE87828627729C85D66F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F83CC5A715ACD33AB1F49667 /* Pods-Viyahe.debug.xcconfig */,
+				51DDBEAF4FFE7D7CBFBD2B86 /* Pods-Viyahe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5028ED70264180BB00C784D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5028ED71264180E100C784D8 /* UserTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		50CC7E8B26416446002F3AF2 = {
+			isa = PBXGroup;
+			children = (
+				50CC7E9626416446002F3AF2 /* Viyahe */,
+				50CC7EAD2641644C002F3AF2 /* ViyaheTests */,
+				50CC7EB82641644C002F3AF2 /* ViyaheUITests */,
+				50CC7E9526416446002F3AF2 /* Products */,
+				15BEE87828627729C85D66F0 /* Pods */,
+				9CD7C1F4C3D22F99D774E412 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		50CC7E9526416446002F3AF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50CC7E9426416446002F3AF2 /* Viyahe.app */,
+				50CC7EAA2641644C002F3AF2 /* ViyaheTests.xctest */,
+				50CC7EB52641644C002F3AF2 /* ViyaheUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50CC7E9626416446002F3AF2 /* Viyahe */ = {
+			isa = PBXGroup;
+			children = (
+				5028ED70264180BB00C784D8 /* Views */,
+				50CC7EE426417A0C002F3AF2 /* Domain */,
+				50CC7EDB26417837002F3AF2 /* Utilities */,
+				50CC7EE1264179F6002F3AF2 /* Controllers */,
+				50CC7EE2264179FF002F3AF2 /* ViewModels */,
+				50CC7EE326417A07002F3AF2 /* Models */,
+				50CC7ECD26416989002F3AF2 /* AppNavigation */,
+				50CC7E9726416446002F3AF2 /* AppDelegate.swift */,
+				50CC7E9926416446002F3AF2 /* SceneDelegate.swift */,
+				50CC7E9B26416446002F3AF2 /* ViewController.swift */,
+				50CC7EA02641644B002F3AF2 /* Assets.xcassets */,
+				50CC7EA22641644B002F3AF2 /* LaunchScreen.storyboard */,
+				50CC7EA52641644B002F3AF2 /* Info.plist */,
+			);
+			path = Viyahe;
+			sourceTree = "<group>";
+		};
+		50CC7EAD2641644C002F3AF2 /* ViyaheTests */ = {
+			isa = PBXGroup;
+			children = (
+				50CC7EAE2641644C002F3AF2 /* ViyaheTests.swift */,
+				50CC7EB02641644C002F3AF2 /* Info.plist */,
+			);
+			path = ViyaheTests;
+			sourceTree = "<group>";
+		};
+		50CC7EB82641644C002F3AF2 /* ViyaheUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50CC7EB92641644C002F3AF2 /* ViyaheUITests.swift */,
+				50CC7EBB2641644C002F3AF2 /* Info.plist */,
+			);
+			path = ViyaheUITests;
+			sourceTree = "<group>";
+		};
+		50CC7ECD26416989002F3AF2 /* AppNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				50CC7ECE264169AB002F3AF2 /* Coordinator.swift */,
+				50CC7ED3264169EB002F3AF2 /* AppCoordinator.swift */,
+			);
+			path = AppNavigation;
+			sourceTree = "<group>";
+		};
+		50CC7EDB26417837002F3AF2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				50CC7EDC26417848002F3AF2 /* UIColor+Viyahe.swift */,
+				5028EDBA2641BAED00C784D8 /* ColorSelector.swift */,
+				5028EDBF2641BB6200C784D8 /* Int+Viyahe.swift */,
+				5028EDC42641C0D500C784D8 /* NetworkingWithAlamofire.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		50CC7EE1264179F6002F3AF2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5028ED6B26417FC600C784D8 /* MainTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		50CC7EE2264179FF002F3AF2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5028EDC9264201AA00C784D8 /* MainTableViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		50CC7EE326417A07002F3AF2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50CC7EEF26417B24002F3AF2 /* GithubUser.swift */,
+				5028EDCE2642020400C784D8 /* GithubUserRepository.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		50CC7EE426417A0C002F3AF2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				50CC7EE526417A1C002F3AF2 /* User.swift */,
+				50CC7EEA26417A6A002F3AF2 /* UserRepository.swift */,
+				5028EDA52641AEBF00C784D8 /* Networking.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9CD7C1F4C3D22F99D774E412 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2C0D3FC521BFB63CF815AD5 /* Pods_Viyahe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50CC7E9326416446002F3AF2 /* Viyahe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50CC7EBE2641644C002F3AF2 /* Build configuration list for PBXNativeTarget "Viyahe" */;
+			buildPhases = (
+				F89DFB42605E18CEB03C4D69 /* [CP] Check Pods Manifest.lock */,
+				50CC7E9026416446002F3AF2 /* Sources */,
+				50CC7E9126416446002F3AF2 /* Frameworks */,
+				50CC7E9226416446002F3AF2 /* Resources */,
+				26FCDB27A8469E4D034A3E09 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Viyahe;
+			productName = Viyahe;
+			productReference = 50CC7E9426416446002F3AF2 /* Viyahe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50CC7EA92641644C002F3AF2 /* ViyaheTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50CC7EC12641644C002F3AF2 /* Build configuration list for PBXNativeTarget "ViyaheTests" */;
+			buildPhases = (
+				50CC7EA62641644C002F3AF2 /* Sources */,
+				50CC7EA72641644C002F3AF2 /* Frameworks */,
+				50CC7EA82641644C002F3AF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50CC7EAC2641644C002F3AF2 /* PBXTargetDependency */,
+			);
+			name = ViyaheTests;
+			productName = ViyaheTests;
+			productReference = 50CC7EAA2641644C002F3AF2 /* ViyaheTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50CC7EB42641644C002F3AF2 /* ViyaheUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50CC7EC42641644C002F3AF2 /* Build configuration list for PBXNativeTarget "ViyaheUITests" */;
+			buildPhases = (
+				50CC7EB12641644C002F3AF2 /* Sources */,
+				50CC7EB22641644C002F3AF2 /* Frameworks */,
+				50CC7EB32641644C002F3AF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50CC7EB72641644C002F3AF2 /* PBXTargetDependency */,
+			);
+			name = ViyaheUITests;
+			productName = ViyaheUITests;
+			productReference = 50CC7EB52641644C002F3AF2 /* ViyaheUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50CC7E8C26416446002F3AF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					50CC7E9326416446002F3AF2 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					50CC7EA92641644C002F3AF2 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 50CC7E9326416446002F3AF2;
+					};
+					50CC7EB42641644C002F3AF2 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 50CC7E9326416446002F3AF2;
+					};
+				};
+			};
+			buildConfigurationList = 50CC7E8F26416446002F3AF2 /* Build configuration list for PBXProject "Viyahe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50CC7E8B26416446002F3AF2;
+			productRefGroup = 50CC7E9526416446002F3AF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50CC7E9326416446002F3AF2 /* Viyahe */,
+				50CC7EA92641644C002F3AF2 /* ViyaheTests */,
+				50CC7EB42641644C002F3AF2 /* ViyaheUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50CC7E9226416446002F3AF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50CC7EA42641644B002F3AF2 /* LaunchScreen.storyboard in Resources */,
+				50CC7EA12641644B002F3AF2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CC7EA82641644C002F3AF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CC7EB32641644C002F3AF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26FCDB27A8469E4D034A3E09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Viyahe/Pods-Viyahe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Viyahe/Pods-Viyahe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Viyahe/Pods-Viyahe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F89DFB42605E18CEB03C4D69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Viyahe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50CC7E9026416446002F3AF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50CC7ED4264169EB002F3AF2 /* AppCoordinator.swift in Sources */,
+				50CC7ECF264169AB002F3AF2 /* Coordinator.swift in Sources */,
+				5028ED72264180E100C784D8 /* UserTableViewCell.swift in Sources */,
+				5028EDA62641AEC000C784D8 /* Networking.swift in Sources */,
+				50CC7E9C26416446002F3AF2 /* ViewController.swift in Sources */,
+				50CC7EDD26417848002F3AF2 /* UIColor+Viyahe.swift in Sources */,
+				50CC7EF026417B24002F3AF2 /* GithubUser.swift in Sources */,
+				5028EDC52641C0D500C784D8 /* NetworkingWithAlamofire.swift in Sources */,
+				50CC7E9826416446002F3AF2 /* AppDelegate.swift in Sources */,
+				50CC7E9A26416446002F3AF2 /* SceneDelegate.swift in Sources */,
+				5028EDC02641BB6200C784D8 /* Int+Viyahe.swift in Sources */,
+				5028EDCA264201AA00C784D8 /* MainTableViewViewModel.swift in Sources */,
+				5028EDCF2642020400C784D8 /* GithubUserRepository.swift in Sources */,
+				50CC7EEB26417A6A002F3AF2 /* UserRepository.swift in Sources */,
+				5028EDBB2641BAED00C784D8 /* ColorSelector.swift in Sources */,
+				5028ED6C26417FC600C784D8 /* MainTableViewController.swift in Sources */,
+				50CC7EE626417A1C002F3AF2 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CC7EA62641644C002F3AF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50CC7EAF2641644C002F3AF2 /* ViyaheTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CC7EB12641644C002F3AF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50CC7EBA2641644C002F3AF2 /* ViyaheUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50CC7EAC2641644C002F3AF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50CC7E9326416446002F3AF2 /* Viyahe */;
+			targetProxy = 50CC7EAB2641644C002F3AF2 /* PBXContainerItemProxy */;
+		};
+		50CC7EB72641644C002F3AF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50CC7E9326416446002F3AF2 /* Viyahe */;
+			targetProxy = 50CC7EB62641644C002F3AF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50CC7EA22641644B002F3AF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50CC7EA32641644B002F3AF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50CC7EBC2641644C002F3AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50CC7EBD2641644C002F3AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50CC7EBF2641644C002F3AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F83CC5A715ACD33AB1F49667 /* Pods-Viyahe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Viyahe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personaltraining.Viyahe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50CC7EC02641644C002F3AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51DDBEAF4FFE7D7CBFBD2B86 /* Pods-Viyahe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Viyahe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personaltraining.Viyahe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		50CC7EC22641644C002F3AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViyaheTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personaltraining.ViyaheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viyahe.app/Viyahe";
+			};
+			name = Debug;
+		};
+		50CC7EC32641644C002F3AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViyaheTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personaltraining.ViyaheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viyahe.app/Viyahe";
+			};
+			name = Release;
+		};
+		50CC7EC52641644C002F3AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViyaheUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personaltraining.ViyaheUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Viyahe;
+			};
+			name = Debug;
+		};
+		50CC7EC62641644C002F3AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViyaheUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personaltraining.ViyaheUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Viyahe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50CC7E8F26416446002F3AF2 /* Build configuration list for PBXProject "Viyahe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50CC7EBC2641644C002F3AF2 /* Debug */,
+				50CC7EBD2641644C002F3AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50CC7EBE2641644C002F3AF2 /* Build configuration list for PBXNativeTarget "Viyahe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50CC7EBF2641644C002F3AF2 /* Debug */,
+				50CC7EC02641644C002F3AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50CC7EC12641644C002F3AF2 /* Build configuration list for PBXNativeTarget "ViyaheTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50CC7EC22641644C002F3AF2 /* Debug */,
+				50CC7EC32641644C002F3AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50CC7EC42641644C002F3AF2 /* Build configuration list for PBXNativeTarget "ViyaheUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50CC7EC52641644C002F3AF2 /* Debug */,
+				50CC7EC62641644C002F3AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50CC7E8C26416446002F3AF2 /* Project object */;
+}
