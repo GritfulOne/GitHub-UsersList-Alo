@@ -8,7 +8,7 @@
 import Foundation
 
 final class MainTableViewViewModel {
-    weak var appCoordinator: AppCoordinator?
+    weak private var appCoordinator: AppCoordinator?
     let userRepository: UserRepository
     
     
@@ -27,6 +27,10 @@ final class MainTableViewViewModel {
                 completion(false, nil) //TODO: verify the error is because of rate limiting
             }
         }
+    }
+    
+    func showProfilePage(forUser user: User) {
+        appCoordinator?.showProfilePage(forUser: user)
     }
     
     

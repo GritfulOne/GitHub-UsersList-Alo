@@ -106,7 +106,7 @@ class UserTableViewCell: UITableViewCell {
         
         userNameLabel.text = user.getUsername()
         htmlURLLabel.text = user.getHTMLURLString()
-        nameLabel.text = user.getName()
+        nameLabel.text = user.getAlias()
     }
     
     required init?(coder: NSCoder) {

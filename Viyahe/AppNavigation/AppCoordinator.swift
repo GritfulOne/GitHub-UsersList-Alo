@@ -24,7 +24,7 @@ final class AppCoordinator: Coordinator {
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         
-        navigationController.navigationBar.barTintColor = UIColor.appTheme
+        navigationController.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.appTheme]
         showMainPage()
     }
     
@@ -34,6 +34,16 @@ final class AppCoordinator: Coordinator {
         mainVC.viewModel = viewModel
         navigationController.viewControllers = [mainVC]
     }
+    
+    
+    func showProfilePage(forUser user: User) {
+        let profileVC = ProfileViewController()
+        profileVC.viewModel = ProfileViewCotrollerViewModel(userRepository: GithubUserRepository())
+        profileVC.user = user
+        
+        navigationController.pushViewController(profileVC, animated: true)
+    }
+    
     
     func showAlert(message: String?) {
         let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)

@@ -9,4 +9,5 @@ import Foundation
 
 protocol UserRepository: AnyObject {
     func getUsers(users: @escaping ([User]?) -> ())
+    func getFullDetails(forUser user: User, completion: @escaping (User) -> ())
 }

@@ -22,6 +22,19 @@ final class GithubUserRepository: UserRepository {
             }
         }
     }
+    
+    
+    func getFullDetails(forUser user: User, completion: @escaping (User) -> ()) {
+        NetworkingWithAlamofire.request(user.getUserURLString(), method: .get, parameters: nil) { (success, data, error) in
+            if success, let responseData = data {
+                let jsonDecoder = JSONDecoder()
+                let githubUserWithFullDetails = try? jsonDecoder.decode(GithubUser.self, from: responseData)
+                completion(githubUserWithFullDetails ?? user)
+            } else {
+                completion(user) //TODO handle negative scenario, return basic info for now
+            }
+        }
+    }
 }
 
 //stubbed data
